@@ -1,0 +1,19 @@
+{
+  "name": "taskapp",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Aplicación sencilla de lista de tareas - Práctica Docker & CI/CD",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5",
+    "vitest": "^3.2.1",
+    "jsdom": "^26.1.0"
+  }
+}

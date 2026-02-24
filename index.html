@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskApp - Gestor de Tareas</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>TaskApp</h1>
+      <p class="subtitle">Gestor de tareas sencillo</p>
+    </header>
+
+    <main>
+      <form id="task-form">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="Escribe una nueva tarea..."
+          autocomplete="off"
+          required
+        />
+        <button type="submit" id="add-btn">Añadir</button>
+      </form>
+
+      <div id="stats">
+        <span id="total-count">Total: 0</span>
+        <span id="done-count">Completadas: 0</span>
+        <span id="pending-count">Pendientes: 0</span>
+      </div>
+
+      <ul id="task-list"></ul>
+
+      <p id="empty-msg" class="empty">No hay tareas todavía. ¡Añade una!</p>
+    </main>
+
+    <footer>
+      <p>Práctica Docker &amp; CI/CD &mdash; <span id="version">v1.0.0</span></p>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
